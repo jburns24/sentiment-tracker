@@ -21,7 +21,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }} # Need to pass in secret so action is authenticated or you will get rate limited
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.13'
       - run: task install
       - name: Create test .env
         run: |
